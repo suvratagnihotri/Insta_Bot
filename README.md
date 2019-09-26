@@ -34,7 +34,7 @@ class TwitterBot:
             bot.find_element_by_class_name('coreSpriteRightPaginationArrow').click()
             time.sleep(10)
             
-sv = TwitterBot('suvrat72000@gmail.com','meuandfamily')
+sv = TwitterBot('username','password')
 sv.login()
 time.sleep(3)
 sv.like_post('codergirl')
