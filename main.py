@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time 
 
-class TwitterBot:
+class InstaBot:
     def __init__(self,username,password):
         self.username = username
         self.password = password
@@ -34,7 +34,7 @@ class TwitterBot:
             bot.find_element_by_class_name('coreSpriteRightPaginationArrow').click()
             time.sleep(8)
             
-sv = TwitterBot('username','password')
+sv = InstaBot('username','password')
 sv.login()
 time.sleep(3)
 sv.like_post('pycoders')
